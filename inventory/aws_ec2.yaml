@@ -10,9 +10,9 @@ filters:
   instance-state-name : running
  
 keyed_groups:
-  - key: tags['Role']
-    prefix: whatever
-    parent_group: "project" 
+  - key: tags['Environment']
+    prefix: ""
+    parent_group: "pablo" 
 
 hostnames:
   - private-ip-address
