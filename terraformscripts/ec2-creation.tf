@@ -5,7 +5,7 @@ provider "aws"{
 
 resource "aws_instance" "jenkinswithterraform"{
      count   = 1
-     ami     =  "ami-05c8ca4485f8b138a"
+     ami     =  "ami-051f0947e420652a9"
      instance_type = "t2.micro"
      security_groups = ["launch-wizard-2"]
      key_name        = "ansible-daily"
