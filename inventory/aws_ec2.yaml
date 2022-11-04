@@ -9,11 +9,16 @@ regions:
 filters:
   instance-state-name : running
  
+#keyed_groups:
+ # - key: tags['Environment']
+  #  prefix: ""
+   # parent_group: "pablo" 
+   
 keyed_groups:
-  - key: tags['Environment']
-    prefix: ""
-    parent_group: "pablo" 
-
+ - key: tags.Name
+   prefix: ""
+   separator: "" 
+   
 hostnames:
   - private-ip-address
 
